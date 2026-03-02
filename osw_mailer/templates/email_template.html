@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>OpenSource Weekend Conference - Invitation</title>
+  <style>
+    /* ── Reset ───────────────────────────────────────────────────── */
+    body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%
+    }
+
+    table,
+    td {
+      mso-table-lspace: 0;
+      mso-table-rspace: 0
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none
+    }
+
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: #0f0f1a
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* ── Fonts ───────────────────────────────────────────────────── */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    /* ── Layout ──────────────────────────────────────────────────── */
+    .email-wrapper {
+      background: #0f0f1a;
+      padding: 32px 16px;
+      font-family: 'Inter', Arial, sans-serif
+    }
+
+    .email-container {
+      max-width: 620px;
+      margin: 0 auto;
+      background: #16162a;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08)
+    }
+
+    /* ── Header gradient bar ─────────────────────────────────────── */
+    .header-bar {
+      background: linear-gradient(135deg, #6c47ff 0%, #a259ff 50%, #ff6b6b 100%);
+      padding: 40px 40px 32px;
+      text-align: center
+    }
+
+    .header-logo {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: rgba(255, 255, 255, 0.7);
+      text-transform: uppercase;
+      margin-bottom: 16px
+    }
+
+    .header-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      margin: 0 0 8px
+    }
+
+    .header-subtitle {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0
+    }
+
+    /* ── Event badge ─────────────────────────────────────────────── */
+    .badge-row {
+      background: #1e1e38;
+      padding: 20px 40px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06)
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(108, 71, 255, 0.2);
+      border: 1px solid rgba(108, 71, 255, 0.5);
+      border-radius: 100px;
+      padding: 6px 20px;
+      font-size: 13px;
+      color: #a78bfa;
+      font-weight: 600;
+      letter-spacing: 0.5px
+    }
+
+    /* ── Body ────────────────────────────────────────────────────── */
+    .body-section {
+      padding: 36px 40px
+    }
+
+    .salutation {
+      font-size: 20px;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 0 0 16px
+    }
+
+    .paragraph {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #b0b0cc;
+      margin: 0 0 20px
+    }
+
+    .paragraph a {
+      color: #a78bfa;
+      text-decoration: none
+    }
+
+    /* ── Personalised benefits box ───────────────────────────────── */
+    .benefit-box {
+      background: #1e1e38;
+      border: 1px solid rgba(108, 71, 255, 0.35);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin: 28px 0
+    }
+
+    .benefit-box-header {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a78bfa;
+      margin: 0 0 16px
+    }
+
+    .benefit-question {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 0 0 20px;
+      line-height: 1.4
+    }
+
+    .benefit-bullets {
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    .benefit-bullets li {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #c8c8e8;
+      padding: 8px 0 8px 28px;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+    }
+
+    .benefit-bullets li:last-child {
+      border-bottom: none
+    }
+
+    .benefit-bullets li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #a78bfa;
+      font-size: 16px;
+      top: 8px
+    }
+
+    /* ── Divider ─────────────────────────────────────────────────── */
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      margin: 28px 0
+    }
+
+    /* ── Highlights strip ────────────────────────────────────────── */
+    .highlights {
+      display: table;
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 12px;
+      margin: 0 -12px
+    }
+
+    .highlight-cell {
+      display: table-cell;
+      background: #1e1e38;
+      border-radius: 10px;
+      padding: 16px 14px;
+      text-align: center;
+      width: 33.33%;
+      vertical-align: top
+    }
+
+    .highlight-icon {
+      font-size: 26px;
+      margin-bottom: 8px
+    }
+
+    .highlight-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 4px
+    }
+
+    .highlight-desc {
+      font-size: 12px;
+      color: #8080a0;
+      margin: 0;
+      line-height: 1.5
+    }
+
+    /* ── CTA button ──────────────────────────────────────────────── */
+    .cta-wrap {
+      text-align: center;
+      margin: 32px 0 8px
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #6c47ff, #a259ff);
+      color: #ffffff !important;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 40px;
+      border-radius: 100px;
+      letter-spacing: 0.3px
+    }
+
+    /* ── Conference details strip ────────────────────────────────── */
+    .details-strip {
+      background: #1a1a30;
+      padding: 24px 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06)
+    }
+
+    .details-grid {
+      display: table;
+      width: 100%
+    }
+
+    .details-col {
+      display: table-cell;
+      vertical-align: top;
+      padding: 0 8px
+    }
+
+    .details-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #6060a0;
+      margin: 0 0 4px
+    }
+
+    .details-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: #c0c0e0;
+      margin: 0
+    }
+
+    /* ── Footer ──────────────────────────────────────────────────── */
+    .footer {
+      background: #0f0f1a;
+      padding: 24px 40px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.06)
+    }
+
+    .footer-links {
+      margin: 0 0 12px
+    }
+
+    .footer-links a {
+      color: #6060a0;
+      font-size: 12px;
+      text-decoration: none;
+      margin: 0 10px
+    }
+
+    .footer-copy {
+      font-size: 11px;
+      color: #404060;
+      line-height: 1.6;
+      margin: 0
+    }
+
+    /* ── Mobile responsive ───────────────────────────────────────── */
+    @media only screen and (max-width:520px) {
+      .header-bar {
+        padding: 28px 20px
+      }
+
+      .body-section {
+        padding: 24px 20px
+      }
+
+      .benefit-box {
+        padding: 20px 18px
+      }
+
+      .highlights {
+        display: block
+      }
+
+      .highlight-cell {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px
+      }
+
+      .details-grid {
+        display: block
+      }
+
+      .details-col {
+        display: block;
+        padding: 8px 0
+      }
+
+      .footer {
+        padding: 20px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="email-wrapper">
+    <table class="email-container" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+
+      <!-- ── HEADER ──────────────────────────────────────────────────────── -->
+      <tr>
+        <td class="header-bar">
+          <p class="header-logo">GDG × OpenSource Weekend</p>
+          <h1 class="header-title">You're Invited to<br />OpenSource Weekend 🚀</h1>
+          <p class="header-subtitle">The premier open-source conference for builders, dreamers &amp; innovators</p>
+        </td>
+      </tr>
+
+      <!-- ── EVENT BADGE ─────────────────────────────────────────────────── -->
+      <tr>
+        <td class="badge-row">
+          <span class="badge">📅 &nbsp; Save the Date - Coming Soon</span>
+        </td>
+      </tr>
+
+      <!-- ── BODY ────────────────────────────────────────────────────────── -->
+      <tr>
+        <td class="body-section">
+
+          <!-- Salutation -->
+          <p class="salutation">Hey {{ recipient_name }} 👋,</p>
+
+          <p class="paragraph">
+            We're thrilled to invite <strong style="color:#fff">{{ company_name }}</strong>
+            to be part of <strong style="color:#fff">OpenSource Weekend (OSW)</strong> -
+            a community-driven conference celebrating open-source software, collaboration,
+            and the incredible people building the future of technology.
+          </p>
+
+          <p class="paragraph">
+            Whether you're a seasoned contributor or just starting your open-source journey,
+            OSW brings together developers, designers, organisers, and companies in an
+            energetic and inclusive space to learn, share, and grow.
+          </p>
+
+          <!-- ── PERSONALISED BENEFITS BOX ────────────────────────────── -->
+          <div class="benefit-box">
+            <p class="benefit-box-header">✦ &nbsp; Personalised for {{ company_name }}</p>
+            <p class="benefit-question">How can OSW Conference benefit {{ company_name }}?</p>
+            <ul class="benefit-bullets">
+              {{ benefit_bullets_html }}
+            </ul>
+          </div>
+
+          <hr class="divider" />
+
+          <!-- ── HIGHLIGHTS ────────────────────────────────────────────── -->
+          <div class="highlights">
+            <div class="highlight-cell">
+              <div class="highlight-icon">🎤</div>
+              <p class="highlight-title">Expert Talks</p>
+              <p class="highlight-desc">Sessions from open-source leaders across the globe</p>
+            </div>
+            <div class="highlight-cell">
+              <div class="highlight-icon">🛠️</div>
+              <p class="highlight-title">Workshops</p>
+              <p class="highlight-desc">Hands-on labs to level up your skills</p>
+            </div>
+            <div class="highlight-cell">
+              <div class="highlight-icon">🤝</div>
+              <p class="highlight-title">Networking</p>
+              <p class="highlight-desc">Connect with 500+ developers &amp; communities</p>
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <p class="paragraph">
+            We'd love to have <strong style="color:#fff">{{ company_name }}</strong> join this
+            movement - whether as an attendee, sponsor, speaker, or community partner.
+            Hit the button below to express your interest and we'll reach out with all the details.
+          </p>
+
+          <!-- ── CTA ───────────────────────────────────────────────────── -->
+          <div class="cta-wrap">
+            <a class="cta-btn" href="https://opensourceweekend.dev" target="_blank">
+              Register Your Interest →
+            </a>
+          </div>
+
+        </td>
+      </tr>
+
+      <!-- ── CONFERENCE DETAILS ───────────────────────────────────────────── -->
+      <tr>
+        <td class="details-strip">
+          <div class="details-grid">
+            <div class="details-col">
+              <p class="details-label">Event</p>
+              <p class="details-value">OpenSource Weekend</p>
+            </div>
+            <div class="details-col">
+              <p class="details-label">Format</p>
+              <p class="details-value">In-Person + Virtual</p>
+            </div>
+            <div class="details-col">
+              <p class="details-label">Organised by</p>
+              <p class="details-value">GDG Community</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <!-- ── FOOTER ───────────────────────────────────────────────────────── -->
+      <tr>
+        <td class="footer">
+          <p class="footer-links">
+            <a href="https://opensourceweekend.dev">Website</a>
+            <a href="https://opensourceweekend.dev/schedule">Schedule</a>
+            <a href="https://opensourceweekend.dev/sponsor">Sponsor</a>
+            <a href="https://opensourceweekend.dev/unsubscribe">Unsubscribe</a>
+          </p>
+          <p class="footer-copy">
+            © 2025 OpenSource Weekend. All rights reserved.<br />
+            You are receiving this because {{ company_name }} may benefit from OSW.<br />
+            <a href="https://opensourceweekend.dev/unsubscribe" style="color:#6060a0">
+              Click here to unsubscribe
+            </a>
+            from future communications.
+          </p>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</body>
+
+</html>

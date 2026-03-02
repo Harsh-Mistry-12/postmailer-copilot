@@ -1,0 +1,21 @@
+# ── Core ──────────────────────────────────────────────────────────────────────
+groq                 # LLM generation (Groq SDK)
+pandas                 # CSV ingestion & manipulation
+python-dotenv          # .env config loader
+
+# ── Email delivery ─────────────────────────────────────────────────────────────
+aiosmtplib             # Async SMTP with built-in TLS support
+asyncio-throttle       # Rate limiting for async tasks
+
+# ── Queue & retry ──────────────────────────────────────────────────────────────
+tenacity              # Retry with exponential back-off
+
+# ── Logging / monitoring ───────────────────────────────────────────────────────
+colorlog               # Coloured console logs
+rich                  # Pretty terminal dashboard
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+tqdm                  # Progress bars
+jinja2                 # HTML template rendering
+email-validator        # RFC-compliant e-mail validation
+python-dateutil        # Timestamp helpers
