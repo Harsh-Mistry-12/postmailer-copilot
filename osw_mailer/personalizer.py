@@ -1,3 +1,4 @@
+# Made with love by Harsh Mistry (OpenSoure Weekend)
 """
 OSW Email Automation — Groq LLM Personalizer
 =============================================

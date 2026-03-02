@@ -1,3 +1,4 @@
+# Made with love by Harsh Mistry (OpenSoure Weekend)
 """
 osw_mailer — OSW Email Automation Package
 """
