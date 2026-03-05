@@ -3,3 +3,6 @@
 __pycache__
 logs
 *.pyc
+
+*.xlsx
+extracted_data.csv
